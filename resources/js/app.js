@@ -32,12 +32,31 @@ import VueAxios from 'vue-axios';
 import App from './App.vue';
 Vue.use(VueAxios, axios);
 
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
+// import VueMaterial from 'vue-material'
+// import 'vue-material/dist/vue-material.min.css'
 
 import VueAuth from '@websanova/vue-auth'
 
-Vue.use(VueMaterial)
+// Vue.use(VueMaterial)
+
+import "quasar-extras/material-icons"
+import "quasar-extras/fontawesome"
+import "quasar-extras/mdi"
+import "quasar-extras/ionicons"
+import "quasar-extras/roboto-font"
+import "quasar-extras/animate"
+// import langEs from 'quasar/lang/es'
+import Quasar, * as All from 'quasar/dist/quasar.umd'
+
+require('quasar/dist/quasar.css');
+
+Vue.use(Quasar, {
+    components: All,
+    directives: All,
+    plugins: All,
+    animations: All,
+    // lang: langEs
+})
 
 
 
@@ -52,7 +71,7 @@ Vue.use(require('@websanova/vue-auth'), {
    auth: require('@websanova/vue-auth/drivers/auth/bearer.js'),
    http: require('@websanova/vue-auth/drivers/http/axios.1.x.js'),
    router: require('@websanova/vue-auth/drivers/router/vue-router.2.x.js'),
-   rolesVar: 'type',
+   rolesVar: 'type',//aqui va la columna rol de users
    loginData: {url: ' api/auth/login'},
    logoutData: {url: ' api/auth/logout'},
    fetchData: {url: ' api/auth/user'},

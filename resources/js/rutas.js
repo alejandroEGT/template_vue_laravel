@@ -7,6 +7,7 @@ import CreateComponent from './components/Create.vue';
 
  import Auth from "./components/auth/auth.vue";
  import Index from './components/auth/index.vue';
+ import MiPerfil from './components/auth/perfil.vue';
 
 const routes = [
   {
@@ -42,7 +43,7 @@ const routes = [
     meta: {auth: true},
     children: [
         { path: '/index', component: Index, name: 'Index' },
-        //{ path: '/chat', component: Chat, name: 'Chat' },
+        { path: '/mi-perfil', component: MiPerfil, name: 'miPerfil' },
     ]
 },
   // {

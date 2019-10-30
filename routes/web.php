@@ -18,3 +18,9 @@ Route::get('/{any}', function () {
 })->where('any', '.*');
 
 Route::post('auth/register', 'AuthController@register');
+
+// Route::get('traer', function () {
+//   return [
+//   	['nombre'=>'alejandro']
+//   ];
+// })->where('any', '.*');

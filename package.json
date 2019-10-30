@@ -26,7 +26,8 @@
     "dependencies": {
         "@websanova/vue-auth": "^2.21.14-beta",
         "vue-axios": "^2.1.4",
-        "vue-material": "^1.0.0-beta-10.2",
-        "vue-router": "^3.0.2"
+        "vue-router": "^3.0.2",
+        "quasar-extras": "^2.0.6",
+        "quasar": "1.0.0-beta.11"
     }
 }

@@ -1,43 +1,10 @@
 <template>
   <div class="row justify-content-center">
-      <div class="col-md-8">
-          <div class="card card-default">
-              <div class="card-header">Crear usuario</div>
+      <q-input v-model="email" label="Standard" />
 
-              <div class="card-body">
-                  <div class="row justify-content-md-center">
-                        <div class="col col-lg-5">
-                             <div class="">
-                                 <div class="card-body">
-                                    <h5 class="card-title">Log in</h5>
-                                    <md-field>
-                                          <label>Email</label>
-                                          <md-input v-model="email"></md-input>
-                                     </md-field>
+      <q-input v-model="password" label="Standard" />
 
-                                      <md-field>
-                                        <label>Password</label>
-                                        <md-input v-model="password" type="password"></md-input>
-                                      </md-field>
-
-                                      <md-button class="md-raised md-primary" @click="login">Ingresar</md-button>
-
-                                      <md-button type="submit" class="md-primary" @click="redirect_create_user">Create user</md-button>
-                      
-                                      <!-- <a href="">Crear una cuenta</a> -->
-                                  </div>
-
-
-                            </div>
-                        </div>
-                   <!--  <div class="col-md-auto">
-                      Variable width content
-                    </div> -->
-                    
-                </div>
-              </div>
-          </div>
-      </div>
+      <q-btn color="primary" @click="login" icon="mail" label="On Left" />
   </div>
 </template>
 
